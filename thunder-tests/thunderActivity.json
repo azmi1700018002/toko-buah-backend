@@ -1,0 +1,153 @@
+[
+  {
+    "_id": "e000e4d5-16b2-45a7-83e5-85c26f466852",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/register",
+    "url": "http://localhost:3000/register",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-05-04T03:15:26.826Z",
+    "modified": "2023-05-04T03:17:52.542Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\" : \"azmi@gmail.com\",\n  \"password\" : \"12346\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2e20dae9-1cd9-4d69-a85e-530dd938081a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/login",
+    "url": "http://localhost:3000/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-05-04T03:18:20.713Z",
+    "modified": "2023-05-04T08:14:50.565Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\" : \"admin@gmail.com\",\n  \"password\" : \"12346\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fb0cafb3-1202-4932-8a4f-84e8e0cc8c7d",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/users/eb0eff20-668e-4949-92fb-bf780a711685",
+    "url": "http://localhost:3000/auth/users/eb0eff20-668e-4949-92fb-bf780a711685",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-05-04T03:54:32.313Z",
+    "modified": "2023-05-04T03:55:04.900Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTc2MDE0LCJpZCI6IkFkbWluIn0.cerJIxLVTFkVjiYoRApQM7UhGytCdsniuiZPd0Boet0"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e18b6088-0e2f-4f3a-ae72-a11c145159f8",
+    "colId": "history",
+    "containerId": "",
+    "name": "https://www.thunderclient.com/welcome",
+    "url": "http://localhost:3000/users/04f29b7b-5d73-4bfe-a9b5-d2f227f33a81",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-05-04T06:01:11.523Z",
+    "modified": "2023-05-04T06:27:56.160Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Username",
+          "value": "Admin2"
+        },
+        {
+          "name": "Password",
+          "value": "123456"
+        },
+        {
+          "name": "Email",
+          "value": "admin2@gmail.com"
+        }
+      ],
+      "files": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTgzNzI2LCJpZCI6IkFkbWluIn0.CtIlSVSfCn_pCt3zExU4udejX7r2cZV_nEamXrUIB8Q"
+    },
+    "tests": []
+  },
+  {
+    "_id": "aecae158-34ca-4f09-a31f-574bcd86a311",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/users",
+    "url": "http://localhost:3000/auth/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-05-04T08:14:40.966Z",
+    "modified": "2023-05-04T08:15:17.114Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTkxNjk2LCJpZCI6IkFkbWluIn0.CXXPGGCq2suxPlQMz3kJg_xv50ch6_xAhGn5wXLGdnw"
+    },
+    "tests": []
+  },
+  {
+    "_id": "41b53457-354f-43b5-b8c6-371dcc11a6f0",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/auth/buah",
+    "url": "http://localhost:3000/auth/buah",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-05-05T03:13:01.024Z",
+    "modified": "2023-05-05T03:20:19.614Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Apel"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Segar sekali rasanya"
+        },
+        {
+          "name": "Harga",
+          "value": "5000"
+        },
+        {
+          "name": "Stok",
+          "value": "2"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjU5OTg4LCJpZCI6IkFkbWluIn0.NsgsxMlJ-VoZI__vKbCeAqc8GH4ts3fXDglGSiOit50"
+    },
+    "tests": []
+  }
+]

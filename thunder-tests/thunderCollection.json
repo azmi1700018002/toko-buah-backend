@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "colName": "Admin Toko Buah",
+    "created": "2023-05-04T03:16:54.358Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
+    "colName": "Buah",
+    "created": "2023-05-05T03:22:14.306Z",
+    "sortNum": 20000,
+    "folders": []
+  }
+]

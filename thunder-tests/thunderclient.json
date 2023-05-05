@@ -1,0 +1,260 @@
+[
+  {
+    "_id": "e362e287-bb47-49e5-96cc-bde449168735",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "Register",
+    "url": "http://localhost:3000/register",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-05-04T03:16:54.366Z",
+    "modified": "2023-05-05T04:13:06.799Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Username",
+          "value": "Admin"
+        },
+        {
+          "name": "Password",
+          "value": "123456"
+        },
+        {
+          "name": "Email",
+          "value": "admin@gmail.com"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "42de2457-5592-41b3-a9cf-65f346c44cfd",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "Login",
+    "url": "http://localhost:3000/login",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-05-04T03:20:58.879Z",
+    "modified": "2023-05-04T03:22:50.062Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\" : \"admin@gmail.com\",\n  \"password\" : \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7fa18787-d045-44fd-ac9b-73b3d66df210",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "DeleteUser",
+    "url": "http://localhost:3000/auth/users/04f29b7b-5d73-4bfe-a9b5-d2f227f33a81",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2023-05-04T03:55:21.690Z",
+    "modified": "2023-05-04T09:13:44.047Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTk1MjE3LCJpZCI6IkFkbWluIn0.ohAzVC4u2g39036Oc-87qfBfqFkPQ3x_azeYNJvWsV4"
+    },
+    "tests": []
+  },
+  {
+    "_id": "40ab0fa8-feb8-4ae3-a968-4897a2b71257",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "Get All User",
+    "url": "http://localhost:3000/auth/users",
+    "method": "GET",
+    "sortNum": 22500,
+    "created": "2023-05-04T08:16:23.700Z",
+    "modified": "2023-05-04T09:13:50.661Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTk1MjE3LCJpZCI6IkFkbWluIn0.ohAzVC4u2g39036Oc-87qfBfqFkPQ3x_azeYNJvWsV4"
+    },
+    "tests": []
+  },
+  {
+    "_id": "cbd38175-1f5f-4c43-8d89-65a8de552383",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "Get User By ID",
+    "url": "http://localhost:3000/auth/users/1e6ea7c6-b63b-418d-82cb-a31cee4d2494",
+    "method": "GET",
+    "sortNum": 23750,
+    "created": "2023-05-04T08:16:37.978Z",
+    "modified": "2023-05-04T09:14:14.855Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTkxNjk2LCJpZCI6IkFkbWluIn0.CXXPGGCq2suxPlQMz3kJg_xv50ch6_xAhGn5wXLGdnw"
+    },
+    "tests": []
+  },
+  {
+    "_id": "eae79642-fd80-4e08-b2e2-76d750de3588",
+    "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
+    "containerId": "",
+    "name": "Update User",
+    "url": "http://localhost:3000/auth/users/1e6ea7c6-b63b-418d-82cb-a31cee4d2494",
+    "method": "PUT",
+    "sortNum": 25000,
+    "created": "2023-05-04T08:23:06.575Z",
+    "modified": "2023-05-04T09:14:38.829Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Username",
+          "value": "Admin1"
+        },
+        {
+          "name": "Password",
+          "value": "123456"
+        },
+        {
+          "name": "Email",
+          "value": "admin1@gmail.com"
+        }
+      ],
+      "files": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTkyNzIzLCJpZCI6IkFkbWluIn0.4M40voUq8e1RDtgzyrUBOrqJMAxS5IhCP3JAaGnXQL0"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5e41462e-b91f-4b0f-88b6-eea59193d663",
+    "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
+    "containerId": "",
+    "name": "Add Buah",
+    "url": "http://localhost:3000/auth/buah",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-05-05T03:22:14.325Z",
+    "modified": "2023-05-05T06:35:56.357Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Apel"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Segar sekali rasanya"
+        },
+        {
+          "name": "Harga",
+          "value": "5000"
+        },
+        {
+          "name": "Stok",
+          "value": "2"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjcyMTIzLCJpZCI6IkFkbWluIn0.1DZi73al0gAtiVunfmAPcC_I-vgDRtJ93hXOJgixMAQ"
+    },
+    "tests": []
+  },
+  {
+    "_id": "a5372593-3b96-4614-a1f5-bde2dbc3fe54",
+    "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
+    "containerId": "",
+    "name": "Update Buah",
+    "url": "http://localhost:3000/auth/buah/1",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2023-05-05T03:48:39.657Z",
+    "modified": "2023-05-05T04:20:31.060Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Apel"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Segar sekali rasanya"
+        },
+        {
+          "name": "Harga",
+          "value": "3000"
+        },
+        {
+          "name": "Stok",
+          "value": "2"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjYzNTkyLCJpZCI6IkFkbWluIn0.IT-V8RP5mdSkL9kfR34z2HaFLi_ur7Se9Ku2-61PaUE"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c16bfc23-9738-4b4c-a131-6f034d695d75",
+    "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
+    "containerId": "",
+    "name": "Delete Buah",
+    "url": "http://localhost:3000/auth/buah/1",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2023-05-05T04:35:41.245Z",
+    "modified": "2023-05-05T04:35:53.687Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjYzNTkyLCJpZCI6IkFkbWluIn0.IT-V8RP5mdSkL9kfR34z2HaFLi_ur7Se9Ku2-61PaUE"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1d367f52-e806-47c4-a290-58283768fdad",
+    "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
+    "containerId": "",
+    "name": "Get All Buah",
+    "url": "http://localhost:3000/auth/buah",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-05-05T06:35:10.163Z",
+    "modified": "2023-05-05T06:35:39.771Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjcyMTIzLCJpZCI6IkFkbWluIn0.1DZi73al0gAtiVunfmAPcC_I-vgDRtJ93hXOJgixMAQ"
+    },
+    "tests": []
+  }
+]

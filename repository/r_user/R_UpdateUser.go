@@ -7,46 +7,6 @@ import (
 	"toko-buah/model/m_user"
 )
 
-// type UpdateUserRepository interface {
-// 	UpdateUser(user *m_user.User) error
-// }
-
-// type updateUserRepository struct{}
-
-// func NewUpdateUserRepository() UpdateUserRepository {
-// 	return &updateUserRepository{}
-// }
-
-// func (r *updateUserRepository) UpdateUser(user *m_user.User) error {
-// 	// Hash password before update
-// 	if user.Password != "" {
-// 		hashedPassword, err := helper.HashPassword(user.Password)
-// 		if err != nil {
-// 			return err
-// 		}
-// 		user.Password = string(hashedPassword)
-// 	}
-
-// 	// Check if the user exists
-// 	var existingUser m_user.User
-// 	if err := db.Server().Where("id_user = ?", user.UserID).First(&existingUser).Error; err != nil {
-// 		return err
-// 	}
-
-// 	// Update user data in the database
-// 	if err := db.Server().Model(&m_user.User{}).
-// 		Where("id_user = ?", user.UserID).
-// 		Updates(map[string]interface{}{
-// 			"username":        user.Username,
-// 			"email":           user.Email,
-// 			"password":        user.Password,
-// 			"profile_picture": user.ProfilePicture,
-// 		}).Error; err != nil {
-// 		return err
-// 	}
-
-//		return nil
-//	}
 type UpdateUserRepository interface {
 	UpdateUser(user *m_user.User) (*m_user.User, error)
 }

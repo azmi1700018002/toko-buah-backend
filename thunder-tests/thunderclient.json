@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-04T03:16:54.366Z",
-    "modified": "2023-05-05T04:13:06.799Z",
+    "modified": "2023-05-12T06:31:04.355Z",
     "headers": [],
     "params": [],
     "body": {
@@ -17,7 +17,7 @@
       "form": [
         {
           "name": "Username",
-          "value": "Admin"
+          "value": "Admin2"
         },
         {
           "name": "Password",
@@ -25,7 +25,7 @@
         },
         {
           "name": "Email",
-          "value": "admin@gmail.com"
+          "value": "admin2@gmail.com"
         }
       ]
     },
@@ -40,7 +40,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-04T03:20:58.879Z",
-    "modified": "2023-05-04T03:22:50.062Z",
+    "modified": "2023-05-19T08:09:54.701Z",
     "headers": [],
     "params": [],
     "body": {
@@ -77,12 +77,12 @@
     "method": "GET",
     "sortNum": 22500,
     "created": "2023-05-04T08:16:23.700Z",
-    "modified": "2023-05-04T09:13:50.661Z",
+    "modified": "2023-05-12T04:33:31.276Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTk1MjE3LCJpZCI6IkFkbWluIn0.ohAzVC4u2g39036Oc-87qfBfqFkPQ3x_azeYNJvWsV4"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzODY5NTc5LCJpZCI6IkFkbWluIn0.YB2dYeoe1d_6bAWlyTm4mjH4BAi_NhpNi1WRU6KzAr4"
     },
     "tests": []
   },
@@ -91,16 +91,16 @@
     "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
     "containerId": "",
     "name": "Get User By ID",
-    "url": "http://localhost:3000/auth/users/1e6ea7c6-b63b-418d-82cb-a31cee4d2494",
+    "url": "http://localhost:3000/auth/users/7eacbbb1-bd3a-444c-94e0-9fbc1efb41bd",
     "method": "GET",
     "sortNum": 23750,
     "created": "2023-05-04T08:16:37.978Z",
-    "modified": "2023-05-04T09:14:14.855Z",
+    "modified": "2023-05-12T09:43:14.060Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTkxNjk2LCJpZCI6IkFkbWluIn0.CXXPGGCq2suxPlQMz3kJg_xv50ch6_xAhGn5wXLGdnw"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4iLCJleHAiOjE2ODM4ODgxNTMsImlkIjoiQWRtaW4ifQ.oSRwSsgaGB1azTgXK-e89r6iPoUs5pv30Z3lS8uSAhg"
     },
     "tests": []
   },
@@ -109,11 +109,11 @@
     "colId": "ae35e28e-f1cf-4894-a96e-1499cfddcdd6",
     "containerId": "",
     "name": "Update User",
-    "url": "http://localhost:3000/auth/users/1e6ea7c6-b63b-418d-82cb-a31cee4d2494",
+    "url": "http://localhost:3000/auth/users/7eacbbb1-bd3a-444c-94e0-9fbc1efb41bd",
     "method": "PUT",
     "sortNum": 25000,
     "created": "2023-05-04T08:23:06.575Z",
-    "modified": "2023-05-04T09:14:38.829Z",
+    "modified": "2023-05-15T06:47:26.775Z",
     "headers": [],
     "params": [],
     "body": {
@@ -130,14 +130,13 @@
         },
         {
           "name": "Email",
-          "value": "admin1@gmail.com"
+          "value": "admin@gmail.com"
         }
-      ],
-      "files": []
+      ]
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMTkyNzIzLCJpZCI6IkFkbWluIn0.4M40voUq8e1RDtgzyrUBOrqJMAxS5IhCP3JAaGnXQL0"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MTM2ODM3LCJpZCI6IkFkbWluMiJ9.AItiPS9-H-Syp1O_Fmh-lnh87INCXVL2XBcP6Dk3r1Y"
     },
     "tests": []
   },
@@ -145,12 +144,12 @@
     "_id": "5e41462e-b91f-4b0f-88b6-eea59193d663",
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
-    "name": "Add Buah",
-    "url": "http://localhost:3000/auth/buah",
+    "name": "Add Produk",
+    "url": "http://localhost:3000/auth/produk",
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-05T03:22:14.325Z",
-    "modified": "2023-05-05T06:35:56.357Z",
+    "modified": "2023-05-16T06:01:13.888Z",
     "headers": [],
     "params": [],
     "body": {
@@ -159,7 +158,7 @@
       "form": [
         {
           "name": "Nama",
-          "value": "Apel"
+          "value": "Jeruk"
         },
         {
           "name": "Deskripsi",
@@ -177,7 +176,7 @@
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjcyMTIzLCJpZCI6IkFkbWluIn0.1DZi73al0gAtiVunfmAPcC_I-vgDRtJ93hXOJgixMAQ"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjIwNDY0LCJpZCI6IkFkbWluMiJ9.GWlWIf7Z0wUfp8tY-pQ1sPIanCIyK72gymqjXojpy1o"
     },
     "tests": []
   },
@@ -185,7 +184,7 @@
     "_id": "a5372593-3b96-4614-a1f5-bde2dbc3fe54",
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
-    "name": "Update Buah",
+    "name": "Update Produk",
     "url": "http://localhost:3000/auth/buah/1",
     "method": "PUT",
     "sortNum": 20000,
@@ -225,7 +224,7 @@
     "_id": "c16bfc23-9738-4b4c-a131-6f034d695d75",
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
-    "name": "Delete Buah",
+    "name": "Delete Produk",
     "url": "http://localhost:3000/auth/buah/1",
     "method": "DELETE",
     "sortNum": 30000,
@@ -243,17 +242,341 @@
     "_id": "1d367f52-e806-47c4-a290-58283768fdad",
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
-    "name": "Get All Buah",
-    "url": "http://localhost:3000/auth/buah",
+    "name": "Get All Produk",
+    "url": "http://localhost:3000/auth/produk",
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-05-05T06:35:10.163Z",
-    "modified": "2023-05-05T06:35:39.771Z",
+    "modified": "2023-05-19T08:18:17.139Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjcyMTIzLCJpZCI6IkFkbWluIn0.1DZi73al0gAtiVunfmAPcC_I-vgDRtJ93hXOJgixMAQ"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NDg3Mzk0LCJpZCI6IkFkbWluMyJ9.NQ46jNtFKWtKHg6i-YTIb1pfxiM6y7TR6af3uw8aXTg"
+    },
+    "tests": []
+  },
+  {
+    "_id": "35520002-fa14-4025-bb07-a9858f4f5e69",
+    "colId": "4aa854d0-ead7-4450-b5f5-62adba002e58",
+    "containerId": "",
+    "name": "Add About",
+    "url": "http://localhost:3000/auth/about",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-05-11T03:12:03.872Z",
+    "modified": "2023-05-11T03:13:25.129Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Judul",
+          "value": "Fresh Fruit"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Buah segar lho, hanya ada di boyolali"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzNzc4MzYwLCJpZCI6IkFkbWluIn0.KSzqkz6ReFD0OWzhpuCLxT86aBlLwdYKhdVOReb1UqM"
+    },
+    "tests": []
+  },
+  {
+    "_id": "dd0089c1-ad53-440e-a806-ac47469bb94a",
+    "colId": "4aa854d0-ead7-4450-b5f5-62adba002e58",
+    "containerId": "",
+    "name": "Get About",
+    "url": "http://localhost:3000/auth/about",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-05-11T03:29:37.285Z",
+    "modified": "2023-05-12T01:34:42.617Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzODU4ODcyLCJpZCI6IkFkbWluIn0.tyrJ84US_1d9O1hEfbKy7tELxz3P3B_qjsPVtJ2Fdvc"
+    },
+    "tests": []
+  },
+  {
+    "_id": "bbeebfe2-eaa4-4b2e-906d-e9125b8a2c9c",
+    "colId": "4aa854d0-ead7-4450-b5f5-62adba002e58",
+    "containerId": "",
+    "name": "Put About",
+    "url": "http://localhost:3000/auth/about/1",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-05-11T03:41:13.937Z",
+    "modified": "2023-05-11T03:42:40.325Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Judul",
+          "value": "Fresh Fruit Boyolali"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Buah segar lho, hanya ada di boyolali"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzNzc4MzYwLCJpZCI6IkFkbWluIn0.KSzqkz6ReFD0OWzhpuCLxT86aBlLwdYKhdVOReb1UqM"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5cacbbbf-9e7c-4632-b194-da97794768de",
+    "colId": "4aa854d0-ead7-4450-b5f5-62adba002e58",
+    "containerId": "",
+    "name": "Delete About",
+    "url": "http://localhost:3000/auth/about/9",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-05-11T03:48:13.243Z",
+    "modified": "2023-05-12T01:39:21.044Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzODU4ODcyLCJpZCI6IkFkbWluIn0.tyrJ84US_1d9O1hEfbKy7tELxz3P3B_qjsPVtJ2Fdvc"
+    },
+    "tests": []
+  },
+  {
+    "_id": "04b75772-154a-4061-ac6a-9bb0411b46fb",
+    "colId": "0d303d4b-5cc8-485f-a66c-31613900e039",
+    "containerId": "",
+    "name": "Add Home",
+    "url": "http://localhost:3000/auth/home",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-05-16T02:22:34.411Z",
+    "modified": "2023-05-16T02:26:09.735Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Subtitle",
+          "value": "Buah Segar Terbaik, Temukan di Toko Buah Terlaris Kami!"
+        },
+        {
+          "name": "Title",
+          "value": "BUAH MOI LEZAT"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Hai, kami tim customer service siap membantu Anda dengan segala kebutuhan Anda. Apapun pertanyaan, keluhan, atau permintaan Anda, kami siap memberikan solusi terbaik untuk Anda."
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjA3MzczLCJpZCI6IkFkbWluMiJ9.Q1uVxM1IlZOdgxyGmXa3xAaWEVHHKS8jda-BhGyAIP8"
+    },
+    "tests": []
+  },
+  {
+    "_id": "48fbe0fc-65c5-4b9b-8563-ce2c3f89c043",
+    "colId": "0d303d4b-5cc8-485f-a66c-31613900e039",
+    "containerId": "",
+    "name": "Get Home",
+    "url": "http://localhost:3000/auth/home",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-05-16T02:26:21.053Z",
+    "modified": "2023-05-16T02:26:35.149Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjA3MzczLCJpZCI6IkFkbWluMiJ9.Q1uVxM1IlZOdgxyGmXa3xAaWEVHHKS8jda-BhGyAIP8"
+    },
+    "tests": []
+  },
+  {
+    "_id": "96b9b938-9023-42c1-af84-45e2bc185633",
+    "colId": "0d303d4b-5cc8-485f-a66c-31613900e039",
+    "containerId": "",
+    "name": "Delete Home",
+    "url": "http://localhost:3000/auth/home/1",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2023-05-16T03:06:50.604Z",
+    "modified": "2023-05-16T03:07:44.235Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjA3MzczLCJpZCI6IkFkbWluMiJ9.Q1uVxM1IlZOdgxyGmXa3xAaWEVHHKS8jda-BhGyAIP8"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c6226485-cde5-4213-b959-409ead9cb630",
+    "colId": "0d303d4b-5cc8-485f-a66c-31613900e039",
+    "containerId": "",
+    "name": "Put Home",
+    "url": "http://localhost:3000/auth/home/2",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2023-05-16T03:07:58.119Z",
+    "modified": "2023-05-16T03:08:55.179Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Subtitle",
+          "value": "Buah Segar Terbaik, Temukan di Toko Buah Terlaris Kami!"
+        },
+        {
+          "name": "Title",
+          "value": "BUAH MOI LEZAT POL"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Hai, kami tim customer service siap membantu Anda dengan segala kebutuhan Anda. Apapun pertanyaan, keluhan, atau permintaan Anda, kami siap memberikan solusi terbaik untuk Anda."
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjA3MzczLCJpZCI6IkFkbWluMiJ9.Q1uVxM1IlZOdgxyGmXa3xAaWEVHHKS8jda-BhGyAIP8"
+    },
+    "tests": []
+  },
+  {
+    "_id": "9a9650d8-ddba-45f8-8de2-db573898d6fb",
+    "colId": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
+    "containerId": "",
+    "name": "Get New Arrival",
+    "url": "http://localhost:3000/auth/newarrival",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-05-16T06:49:57.708Z",
+    "modified": "2023-05-19T08:48:14.895Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NDg3Mzk0LCJpZCI6IkFkbWluMyJ9.NQ46jNtFKWtKHg6i-YTIb1pfxiM6y7TR6af3uw8aXTg"
+    },
+    "tests": []
+  },
+  {
+    "_id": "42cb772d-4439-40e2-b075-260cb79690a8",
+    "colId": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
+    "containerId": "",
+    "name": "Delete New Arrival",
+    "url": "http://localhost:3000/auth/newarrival/2",
+    "method": "DELETE",
+    "sortNum": 20000,
+    "created": "2023-05-16T06:50:03.748Z",
+    "modified": "2023-05-16T08:13:20.684Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
+    },
+    "tests": []
+  },
+  {
+    "_id": "bad277f2-057f-4c91-be02-5ec4ede82c20",
+    "colId": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
+    "containerId": "",
+    "name": "Add New Arrival",
+    "url": "http://localhost:3000/auth/newarrival",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-05-16T06:50:13.215Z",
+    "modified": "2023-05-16T08:10:13.950Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Jeruk"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Cuma tersedia 100 biji"
+        },
+        {
+          "name": "HargaAwal",
+          "value": "10000"
+        },
+        {
+          "name": "HargaPromo",
+          "value": "5000"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
+    },
+    "tests": []
+  },
+  {
+    "_id": "67040020-c15f-482b-a40f-e912b790c683",
+    "colId": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
+    "containerId": "",
+    "name": "Update New Arrival",
+    "url": "http://localhost:3000/auth/newarrival/1",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2023-05-16T07:51:16.363Z",
+    "modified": "2023-05-16T08:13:42.384Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Anggur"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Cuma tersedia 100 biji"
+        },
+        {
+          "name": "HargaAwal",
+          "value": "10000"
+        },
+        {
+          "name": "HargaPromo",
+          "value": "4000"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
     },
     "tests": []
   }

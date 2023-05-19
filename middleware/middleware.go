@@ -21,9 +21,10 @@ func AuthMiddleware() (*jwt.GinJWTMiddleware, error) {
 		PayloadFunc: func(data interface{}) jwt.MapClaims {
 			if v, ok := data.(*m_user.User); ok {
 				return jwt.MapClaims{
-					identityKey: v.Username,
-					"UserID":    v.UserID.String(), // tambahkan IDUser ke payload
-					"Username":  v.Username,
+					identityKey:      v.Username,
+					"UserID":         v.UserID.String(), // tambahkan IDUser ke payload
+					"Username":       v.Username,
+					"ProfilePicture": v.ProfilePicture,
 				}
 			}
 			return jwt.MapClaims{}

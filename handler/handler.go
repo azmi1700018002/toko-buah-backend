@@ -50,10 +50,11 @@ func LoginHandler(c *gin.Context) {
 	expireTimeString := expireTimeUTC.Format(time.RFC3339)
 
 	token, err := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-		identityKey: user.Username,
-		"UserID":    user.UserID.String(),
-		"Username":  user.Username,
-		"exp":       expireTime.Unix(),
+		identityKey:      user.Username,
+		"UserID":         user.UserID.String(),
+		"Username":       user.Username,
+		"ProfilePicture": user.ProfilePicture,
+		"exp":            expireTime.Unix(),
 	}).SignedString([]byte("secret key"))
 
 	if err != nil {
@@ -62,10 +63,11 @@ func LoginHandler(c *gin.Context) {
 	}
 
 	c.JSON(200, gin.H{
-		"token":    token,
-		"UserID":   user.UserID.String(),
-		"Username": user.Username,
-		"expired":  expireTimeString,
-		"status":   200,
+		"token":          token,
+		"UserID":         user.UserID.String(),
+		"Username":       user.Username,
+		"ProfilePicture": user.ProfilePicture,
+		"expired":        expireTimeString,
+		"status":         200,
 	})
 }

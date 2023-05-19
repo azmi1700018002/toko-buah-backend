@@ -149,5 +149,19 @@
       "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI2MTRkYjEwNi1lOGM3LTRlOTctYjFmYS0yZGU1MWU0NjNmOTAiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjU5OTg4LCJpZCI6IkFkbWluIn0.NsgsxMlJ-VoZI__vKbCeAqc8GH4ts3fXDglGSiOit50"
     },
     "tests": []
+  },
+  {
+    "_id": "b8d7ce1a-3116-418e-838c-c045cc3d7171",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/produk",
+    "url": "http://localhost:3000/produk",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-05-19T08:42:48.561Z",
+    "modified": "2023-05-19T08:42:48.561Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

@@ -2,7 +2,10 @@ package db
 
 import (
 	"os"
-	"toko-buah/model/m_buah"
+	"toko-buah/model/m_about"
+	"toko-buah/model/m_home"
+	m_newarrival "toko-buah/model/m_new_arrival"
+	"toko-buah/model/m_produk"
 	"toko-buah/model/m_user"
 
 	"github.com/joho/godotenv"
@@ -40,7 +43,7 @@ func Server() *gorm.DB {
 	})
 
 	// Auto migrate the database
-	db.AutoMigrate(&m_user.User{}, &m_buah.Buah{})
+	db.AutoMigrate(&m_user.User{}, &m_home.Home{}, &m_about.About{}, &m_produk.Produk{}, &m_newarrival.NewArrival{})
 
 	if err != nil {
 		panic("Failed to Server to database!")

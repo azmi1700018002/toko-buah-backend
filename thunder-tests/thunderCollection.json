@@ -8,9 +8,30 @@
   },
   {
     "_id": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
-    "colName": "Buah",
+    "colName": "Produk",
     "created": "2023-05-05T03:22:14.306Z",
+    "sortNum": 45000,
+    "folders": []
+  },
+  {
+    "_id": "4aa854d0-ead7-4450-b5f5-62adba002e58",
+    "colName": "About",
+    "created": "2023-05-11T03:11:52.329Z",
+    "sortNum": 30000,
+    "folders": []
+  },
+  {
+    "_id": "0d303d4b-5cc8-485f-a66c-31613900e039",
+    "colName": "Home",
+    "created": "2023-05-16T02:15:41.223Z",
     "sortNum": 20000,
+    "folders": []
+  },
+  {
+    "_id": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
+    "colName": "New Arrival",
+    "created": "2023-05-16T06:49:45.956Z",
+    "sortNum": 50000,
     "folders": []
   }
 ]

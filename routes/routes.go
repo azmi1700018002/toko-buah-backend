@@ -143,6 +143,8 @@ func SetupRouter() *gin.Engine {
 	r.GET("/users", userGetController.GetAllUser)
 	r.GET("/produk", produkGetController.GetAllProduk)
 	r.GET("/newarrival", newarrivalGetController.GetAllNewArrival)
+	r.GET("/public/home", homeGetController.GetAllHome)
+	r.GET("/public/about", aboutGetController.GetAllAbout)
 	// r.GET("/users/:id_user", userGetController.GetUserByID)
 	// Apply auth middleware to routes
 	auth := r.Group("/auth")

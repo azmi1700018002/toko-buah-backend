@@ -15,4 +15,5 @@ type Produk struct {
 	CreatedAt time.Time      `column:"created_at"`
 	UpdatedAt time.Time      `column:"updated_at"`
 	DeletedAt gorm.DeletedAt `column:"deleted_at"`
+	Gambar    string         `column:"gambar"`
 }

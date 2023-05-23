@@ -149,7 +149,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-05T03:22:14.325Z",
-    "modified": "2023-05-16T06:01:13.888Z",
+    "modified": "2023-05-23T01:23:53.256Z",
     "headers": [],
     "params": [],
     "body": {
@@ -158,7 +158,7 @@
       "form": [
         {
           "name": "Nama",
-          "value": "Jeruk"
+          "value": "test"
         },
         {
           "name": "Deskripsi",
@@ -172,11 +172,17 @@
           "name": "Stok",
           "value": "2"
         }
+      ],
+      "files": [
+        {
+          "name": "gambar",
+          "value": "..\\..\\..\\..\\..\\Downloads\\pngegg.png"
+        }
       ]
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjIwNDY0LCJpZCI6IkFkbWluMiJ9.GWlWIf7Z0wUfp8tY-pQ1sPIanCIyK72gymqjXojpy1o"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0ODA3NTE4LCJpZCI6IkFkbWluMyJ9.LSLhfmszgkNJ5rOwdg-wvz4pm5-jckvzBzjecX2oTOM"
     },
     "tests": []
   },
@@ -247,12 +253,12 @@
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-05-05T06:35:10.163Z",
-    "modified": "2023-05-19T08:18:17.139Z",
+    "modified": "2023-05-23T01:05:35.210Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NDg3Mzk0LCJpZCI6IkFkbWluMyJ9.NQ46jNtFKWtKHg6i-YTIb1pfxiM6y7TR6af3uw8aXTg"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0ODA3NTE4LCJpZCI6IkFkbWluMyJ9.LSLhfmszgkNJ5rOwdg-wvz4pm5-jckvzBzjecX2oTOM"
     },
     "tests": []
   },
@@ -297,12 +303,12 @@
     "method": "GET",
     "sortNum": 20000,
     "created": "2023-05-11T03:29:37.285Z",
-    "modified": "2023-05-12T01:34:42.617Z",
+    "modified": "2023-05-22T06:12:48.643Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzODU4ODcyLCJpZCI6IkFkbWluIn0.tyrJ84US_1d9O1hEfbKy7tELxz3P3B_qjsPVtJ2Fdvc"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NzM5NTAxLCJpZCI6IkFkbWluMyJ9.dqQt_QkwZVHaWOAlh3fnK6F9nlMEla1BIC10f6m_9Aw"
     },
     "tests": []
   },
@@ -401,12 +407,12 @@
     "method": "GET",
     "sortNum": 20000,
     "created": "2023-05-16T02:26:21.053Z",
-    "modified": "2023-05-16T02:26:35.149Z",
+    "modified": "2023-05-22T06:11:51.450Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjA3MzczLCJpZCI6IkFkbWluMiJ9.Q1uVxM1IlZOdgxyGmXa3xAaWEVHHKS8jda-BhGyAIP8"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NzM5NTAxLCJpZCI6IkFkbWluMyJ9.dqQt_QkwZVHaWOAlh3fnK6F9nlMEla1BIC10f6m_9Aw"
     },
     "tests": []
   },

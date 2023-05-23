@@ -16,7 +16,12 @@ func NewAddProdukService(addProdukRepo r_produk.AddProdukRepository) *AddProdukS
 }
 
 func (s *AddProdukService) AddProduk(ctx *gin.Context, produk m_produk.Produk) (*m_produk.Produk, error) {
-	updatedProduct, err := s.addProdukRepo.AddProduk(&produk)
+	gambarFile, err := ctx.FormFile("gambar")
+	if err != nil {
+		return nil, err
+	}
+
+	updatedProduct, err := s.addProdukRepo.AddProduk(&produk, gambarFile)
 	if err != nil {
 		return nil, err
 	}

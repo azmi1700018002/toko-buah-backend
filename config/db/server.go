@@ -2,11 +2,11 @@ package db
 
 import (
 	"os"
-	"toko-buah/model/m_about"
-	"toko-buah/model/m_home"
-	m_newarrival "toko-buah/model/m_new_arrival"
-	"toko-buah/model/m_produk"
-	"toko-buah/model/m_user"
+// 	"toko-buah/model/m_about"
+// 	"toko-buah/model/m_home"
+// 	m_newarrival "toko-buah/model/m_new_arrival"
+// 	"toko-buah/model/m_produk"
+// 	"toko-buah/model/m_user"
 
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"

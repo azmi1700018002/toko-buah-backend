@@ -43,7 +43,7 @@ func Server() *gorm.DB {
 	})
 
 	// Auto migrate the database
-	db.AutoMigrate(&m_user.User{}, &m_home.Home{}, &m_about.About{}, &m_produk.Produk{}, &m_newarrival.NewArrival{})
+	// db.AutoMigrate(&m_user.User{}, &m_home.Home{}, &m_about.About{}, &m_produk.Produk{}, &m_newarrival.NewArrival{})
 
 	if err != nil {
 		panic("Failed to Server to database!")

@@ -5,14 +5,32 @@ import (
 	"toko-buah/routes"
 )
 
-func main() {
+// func main() {
 
+// 	// Server to database
+// 	db.Server()
+
+// 	// Initalize the router
+// 	routes.SetupRouter()
+
+// 	// Run the server
+// 	routes.SetupRouter().Run(":3000")
+// }
+
+func main() {
 	// Server to database
 	db.Server()
 
-	// Initalize the router
-	routes.SetupRouter()
+	// Inisialisasi router
+	router := routes.SetupRouter()
 
-	// Run the server
-	routes.SetupRouter().Run(":3000")
+	// Tentukan port yang akan digunakan
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000" // Port default jika tidak ada variabel lingkungan PORT
+	}
+
+	// Jalankan server dengan menggunakan HTTP
+	log.Println("Server running on port", port)
+	log.Fatal(http.ListenAndServe(":"+port, router))
 }

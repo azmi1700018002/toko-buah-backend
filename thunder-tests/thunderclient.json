@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-04T03:16:54.366Z",
-    "modified": "2023-05-12T06:31:04.355Z",
+    "modified": "2023-05-23T05:59:54.856Z",
     "headers": [],
     "params": [],
     "body": {
@@ -17,7 +17,7 @@
       "form": [
         {
           "name": "Username",
-          "value": "Admin2"
+          "value": "Admin1"
         },
         {
           "name": "Password",
@@ -25,7 +25,7 @@
         },
         {
           "name": "Email",
-          "value": "admin2@gmail.com"
+          "value": "admin@gmail.com"
         }
       ]
     },
@@ -40,7 +40,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-04T03:20:58.879Z",
-    "modified": "2023-05-19T08:09:54.701Z",
+    "modified": "2023-05-23T06:01:35.245Z",
     "headers": [],
     "params": [],
     "body": {
@@ -149,7 +149,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-05T03:22:14.325Z",
-    "modified": "2023-05-23T01:23:53.256Z",
+    "modified": "2023-05-29T07:41:58.994Z",
     "headers": [],
     "params": [],
     "body": {
@@ -158,31 +158,31 @@
       "form": [
         {
           "name": "Nama",
-          "value": "test"
+          "value": "Jeruk"
         },
         {
           "name": "Deskripsi",
-          "value": "Segar sekali rasanya"
+          "value": "Segar dan Lezat"
         },
         {
           "name": "Harga",
-          "value": "5000"
+          "value": "10000"
         },
         {
           "name": "Stok",
-          "value": "2"
+          "value": "10"
         }
       ],
       "files": [
         {
           "name": "gambar",
-          "value": "..\\..\\..\\..\\..\\Downloads\\pngegg.png"
+          "value": "..\\..\\..\\..\\..\\Pictures\\Screenshots\\Screenshot (1).png"
         }
       ]
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0ODA3NTE4LCJpZCI6IkFkbWluMyJ9.LSLhfmszgkNJ5rOwdg-wvz4pm5-jckvzBzjecX2oTOM"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTM0OTY5MSwiaWQiOiJBem1pIn0.OBoTzoyy2xCU-Big1R9jMw6Jf1Uks2x62KTSAPwCksI"
     },
     "tests": []
   },
@@ -191,11 +191,11 @@
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
     "name": "Update Produk",
-    "url": "http://localhost:3000/auth/buah/1",
+    "url": "http://localhost:3000/auth/produk/1",
     "method": "PUT",
     "sortNum": 20000,
     "created": "2023-05-05T03:48:39.657Z",
-    "modified": "2023-05-05T04:20:31.060Z",
+    "modified": "2023-05-29T07:48:42.356Z",
     "headers": [],
     "params": [],
     "body": {
@@ -204,25 +204,31 @@
       "form": [
         {
           "name": "Nama",
-          "value": "Apel"
+          "value": "Jeruk 3"
         },
         {
           "name": "Deskripsi",
-          "value": "Segar sekali rasanya"
+          "value": "Segar dan Lezat"
         },
         {
           "name": "Harga",
-          "value": "3000"
+          "value": "5000"
         },
         {
           "name": "Stok",
-          "value": "2"
+          "value": "10"
+        }
+      ],
+      "files": [
+        {
+          "name": "gambar",
+          "value": "..\\..\\..\\..\\..\\Pictures\\Screenshots\\Screenshot (3).png"
         }
       ]
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjYzNTkyLCJpZCI6IkFkbWluIn0.IT-V8RP5mdSkL9kfR34z2HaFLi_ur7Se9Ku2-61PaUE"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTM0OTY5MSwiaWQiOiJBem1pIn0.OBoTzoyy2xCU-Big1R9jMw6Jf1Uks2x62KTSAPwCksI"
     },
     "tests": []
   },
@@ -231,16 +237,16 @@
     "colId": "b6422d0b-f30a-461b-98f2-3a708e5438c9",
     "containerId": "",
     "name": "Delete Produk",
-    "url": "http://localhost:3000/auth/buah/1",
+    "url": "http://localhost:3000/auth/produk/3",
     "method": "DELETE",
     "sortNum": 30000,
     "created": "2023-05-05T04:35:41.245Z",
-    "modified": "2023-05-05T04:35:53.687Z",
+    "modified": "2023-05-26T08:31:58.132Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOiI3ZWFjYmJiMS1iZDNhLTQ0NGMtOTRlMC05ZmJjMWVmYjQxYmQiLCJVc2VybmFtZSI6IkFkbWluIiwiZXhwIjoxNjgzMjYzNTkyLCJpZCI6IkFkbWluIn0.IT-V8RP5mdSkL9kfR34z2HaFLi_ur7Se9Ku2-61PaUE"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTA5MzMzNCwiaWQiOiJBem1pIn0.RmGQsjiB26r9o3NR_RyAOJ0WNuhPfwxBcN2YHBqkwqI"
     },
     "tests": []
   },
@@ -253,12 +259,12 @@
     "method": "GET",
     "sortNum": 40000,
     "created": "2023-05-05T06:35:10.163Z",
-    "modified": "2023-05-23T01:05:35.210Z",
+    "modified": "2023-05-29T02:33:09.980Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0ODA3NTE4LCJpZCI6IkFkbWluMyJ9.LSLhfmszgkNJ5rOwdg-wvz4pm5-jckvzBzjecX2oTOM"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTMzMTE3MSwiaWQiOiJBem1pIn0.UcBYDbWSmc64TmXLoBmcijNIxL_cn3fyHOEVqJwlIJI"
     },
     "tests": []
   },
@@ -479,12 +485,12 @@
     "method": "GET",
     "sortNum": 10000,
     "created": "2023-05-16T06:49:57.708Z",
-    "modified": "2023-05-19T08:48:14.895Z",
+    "modified": "2023-05-30T07:35:42.929Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQWRtaW4zIiwiZXhwIjoxNjg0NDg3Mzk0LCJpZCI6IkFkbWluMyJ9.NQ46jNtFKWtKHg6i-YTIb1pfxiM6y7TR6af3uw8aXTg"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTQzNTAyNywiaWQiOiJBem1pIn0.VxzoV4G5CKLo2uBa864w4q7edAgdO_yrLW5_3CFtUNc"
     },
     "tests": []
   },
@@ -493,16 +499,16 @@
     "colId": "2d3131c3-97b6-4618-a760-f5bbeba8db8c",
     "containerId": "",
     "name": "Delete New Arrival",
-    "url": "http://localhost:3000/auth/newarrival/2",
+    "url": "http://localhost:3000/auth/newarrival/3",
     "method": "DELETE",
     "sortNum": 20000,
     "created": "2023-05-16T06:50:03.748Z",
-    "modified": "2023-05-16T08:13:20.684Z",
+    "modified": "2023-05-30T07:35:37.764Z",
     "headers": [],
     "params": [],
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTQzNTAyNywiaWQiOiJBem1pIn0.VxzoV4G5CKLo2uBa864w4q7edAgdO_yrLW5_3CFtUNc"
     },
     "tests": []
   },
@@ -515,7 +521,7 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2023-05-16T06:50:13.215Z",
-    "modified": "2023-05-16T08:10:13.950Z",
+    "modified": "2023-05-30T07:35:18.348Z",
     "headers": [],
     "params": [],
     "body": {
@@ -524,7 +530,7 @@
       "form": [
         {
           "name": "Nama",
-          "value": "Jeruk"
+          "value": "Strawbery"
         },
         {
           "name": "Deskripsi",
@@ -538,11 +544,17 @@
           "name": "HargaPromo",
           "value": "5000"
         }
+      ],
+      "files": [
+        {
+          "name": "gambar",
+          "value": "..\\..\\..\\..\\..\\Downloads\\pngwing.com (1).png"
+        }
       ]
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTQzNTAyNywiaWQiOiJBem1pIn0.VxzoV4G5CKLo2uBa864w4q7edAgdO_yrLW5_3CFtUNc"
     },
     "tests": []
   },
@@ -555,7 +567,7 @@
     "method": "PUT",
     "sortNum": 40000,
     "created": "2023-05-16T07:51:16.363Z",
-    "modified": "2023-05-16T08:13:42.384Z",
+    "modified": "2023-05-30T07:36:05.018Z",
     "headers": [],
     "params": [],
     "body": {
@@ -564,7 +576,7 @@
       "form": [
         {
           "name": "Nama",
-          "value": "Anggur"
+          "value": "Apel Hijau"
         },
         {
           "name": "Deskripsi",
@@ -578,11 +590,12 @@
           "name": "HargaPromo",
           "value": "4000"
         }
-      ]
+      ],
+      "files": []
     },
     "auth": {
       "type": "bearer",
-      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6ImFmMjYxNTk2LTRhZmEtNDQ5Zi1hNmQ3LTM3ZjcwMjQ1MGUxYyIsIlVzZXJuYW1lIjoiQWRtaW4yIiwiZXhwIjoxNjg0MjI4MTg4LCJpZCI6IkFkbWluMiJ9.92Rhjq9Z-3KvlUSeZkUJjkY_4Z9Wre2haq5umL5rrFk"
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTQzNTAyNywiaWQiOiJBem1pIn0.VxzoV4G5CKLo2uBa864w4q7edAgdO_yrLW5_3CFtUNc"
     },
     "tests": []
   }

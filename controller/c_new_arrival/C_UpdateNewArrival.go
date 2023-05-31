@@ -25,8 +25,15 @@ func (c *UpdateNewArrivalController) UpdateNewArrival(ctx *gin.Context) {
 		return
 	}
 
+	// Mendapatkan file foto profil dari request body
+	file, err := ctx.FormFile("gambar")
+	if err != nil && err != http.ErrMissingFile {
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
 	// Memanggil service untuk update newarrival
-	updatedNewArrival, err := c.updateNewArrivalService.UpdateNewArrival(ctx, newarrival)
+	updatedNewArrival, err := c.updateNewArrivalService.UpdateNewArrival(ctx, newarrival, file)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

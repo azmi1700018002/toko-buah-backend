@@ -16,7 +16,12 @@ func NewAddNewArrivalService(addNewArrivalRepo r_newarrival.AddNewArrivalReposit
 }
 
 func (s *AddNewArrivalService) AddNewArrival(ctx *gin.Context, newarrival m_newarrival.NewArrival) (*m_newarrival.NewArrival, error) {
-	updatedProduct, err := s.addNewArrivalRepo.AddNewArrival(&newarrival)
+	gambarFile, err := ctx.FormFile("gambar")
+	if err != nil {
+		return nil, err
+	}
+
+	updatedProduct, err := s.addNewArrivalRepo.AddNewArrival(&newarrival, gambarFile)
 	if err != nil {
 		return nil, err
 	}

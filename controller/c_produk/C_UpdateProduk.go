@@ -25,13 +25,20 @@ func (c *UpdateProdukController) UpdateProduk(ctx *gin.Context) {
 		return
 	}
 
+	// Mendapatkan file foto profil dari request body
+	file, err := ctx.FormFile("gambar")
+	if err != nil && err != http.ErrMissingFile {
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
 	// Memanggil service untuk update produk
-	updatedProduk, err := c.updateProdukService.UpdateProduk(ctx, produk)
+	updatedProduk, err := c.updateProdukService.UpdateProduk(ctx, produk, file)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
 
 	// Menampilkan respon JSON
-	ctx.JSON(http.StatusOK, gin.H{"data": updatedProduk, "message": "Produk berhasil diupdate"})
+	ctx.JSON(http.StatusOK, gin.H{"data": updatedProduk, "message": "Produk berhasil diperbarui"})
 }

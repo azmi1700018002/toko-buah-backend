@@ -6,4 +6,5 @@ type NewArrival struct {
 	Deskripsi    string  `column:"deskripsi" validate:"max=255"`
 	HargaAwal    float64 `column:"harga_awal" validate:"required,min=0"`
 	HargaPromo   float64 `column:"harga_promo" validate:"required,min=0"`
+	Gambar       string  `gorm:"column:gambar"`
 }

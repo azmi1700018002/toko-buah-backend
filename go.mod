@@ -17,12 +17,14 @@ require (
 require (
 	github.com/creasty/defaults v1.5.1 // indirect
 	github.com/gorilla/schema v1.2.0 // indirect
+	golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8 // indirect
 )
 
 require (
 	github.com/bytedance/sonic v1.8.0 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/cloudinary/cloudinary-go v1.7.0
+	github.com/disintegration/imaging v1.6.2
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect

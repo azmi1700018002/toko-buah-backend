@@ -1,6 +1,7 @@
 package s_newarrival
 
 import (
+	"mime/multipart"
 	"strconv"
 	m_newarrival "toko-buah/model/m_new_arrival"
 	r_newarrival "toko-buah/repository/r_new_arrival"
@@ -16,7 +17,7 @@ func NewUpdateNewArrivalService(updateNewArrivalRepo r_newarrival.UpdateNewArriv
 	return &UpdateNewArrivalService{updateNewArrivalRepo}
 }
 
-func (s *UpdateNewArrivalService) UpdateNewArrival(ctx *gin.Context, newarrival m_newarrival.NewArrival) (*m_newarrival.NewArrival, error) {
+func (s *UpdateNewArrivalService) UpdateNewArrival(ctx *gin.Context, newarrival m_newarrival.NewArrival, gambarFile *multipart.FileHeader) (*m_newarrival.NewArrival, error) {
 	// Mendapatkan ID newarrival dari parameter route
 	idNewArrivalStr := ctx.Param("new_arrival_id")
 
@@ -30,7 +31,7 @@ func (s *UpdateNewArrivalService) UpdateNewArrival(ctx *gin.Context, newarrival 
 	newarrival.NewArrivalID = idNewArrival
 
 	// Memanggil repository untuk update newarrival
-	updatedNewArrival, err := s.updateNewArrivalRepo.UpdateNewArrival(&newarrival)
+	updatedNewArrival, err := s.updateNewArrivalRepo.UpdateNewArrival(&newarrival, gambarFile)
 	if err != nil {
 		return nil, err
 	}

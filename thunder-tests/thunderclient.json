@@ -598,5 +598,211 @@
       "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTQzNTAyNywiaWQiOiJBem1pIn0.VxzoV4G5CKLo2uBa864w4q7edAgdO_yrLW5_3CFtUNc"
     },
     "tests": []
+  },
+  {
+    "_id": "da9853c1-fdc8-4bb0-b48f-debb9206f9e0",
+    "colId": "53f71fb8-67d2-4f0e-af70-ba75b0b241cc",
+    "containerId": "",
+    "name": "Get Best Seller",
+    "url": "http://localhost:3000/auth/bestseller",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-06-05T03:26:10.693Z",
+    "modified": "2023-06-05T03:44:12.435Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTk0MDIwNSwiaWQiOiJBem1pIn0.VYxiCeF-GCrJ_O8geJBtlf1odEJ5u883tHxiSkL7o9c"
+    },
+    "tests": []
+  },
+  {
+    "_id": "30599e3a-7f9f-4a6f-aafc-630184c8b03b",
+    "colId": "53f71fb8-67d2-4f0e-af70-ba75b0b241cc",
+    "containerId": "",
+    "name": "Delete Best Seller",
+    "url": "http://localhost:3000/auth/bestseller/1",
+    "method": "DELETE",
+    "sortNum": 20000,
+    "created": "2023-06-05T03:26:22.039Z",
+    "modified": "2023-06-05T03:27:14.324Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "23c830cb-5b78-43bb-b866-949af288c74d",
+    "colId": "53f71fb8-67d2-4f0e-af70-ba75b0b241cc",
+    "containerId": "",
+    "name": "Update Best Seller",
+    "url": "http://localhost:3000/auth/bestseller/1",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-06-05T03:26:31.985Z",
+    "modified": "2023-06-05T03:46:36.631Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Apel"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Contoh Update "
+        }
+      ],
+      "files": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTk0MDIwNSwiaWQiOiJBem1pIn0.VYxiCeF-GCrJ_O8geJBtlf1odEJ5u883tHxiSkL7o9c"
+    },
+    "tests": []
+  },
+  {
+    "_id": "00f392ac-2e83-4ece-bc67-8317d2cf95d8",
+    "colId": "53f71fb8-67d2-4f0e-af70-ba75b0b241cc",
+    "containerId": "",
+    "name": "Add Best Seller",
+    "url": "http://localhost:3000/auth/bestseller",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-06-05T03:26:38.364Z",
+    "modified": "2023-06-05T03:45:26.842Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Apel"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "contoh best seller"
+        }
+      ],
+      "files": [
+        {
+          "name": "gambar",
+          "value": "..\\..\\..\\..\\..\\Downloads\\pngwing.com (2).png"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSIsImV4cCI6MTY4NTk0MDIwNSwiaWQiOiJBem1pIn0.VYxiCeF-GCrJ_O8geJBtlf1odEJ5u883tHxiSkL7o9c"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c83b6419-5155-46c5-aeb8-fd3e6545708b",
+    "colId": "b307c7b6-079e-4657-83a4-9ae5d264370c",
+    "containerId": "",
+    "name": "Get Testimoni",
+    "url": "http://localhost:3000/public/testimoni",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-06-08T06:29:04.620Z",
+    "modified": "2023-06-08T06:34:15.850Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "41df9ae0-c943-45cc-95e5-c4bfa0b0bfe8",
+    "colId": "b307c7b6-079e-4657-83a4-9ae5d264370c",
+    "containerId": "",
+    "name": "Delete Testimoni",
+    "url": "http://localhost:3000/auth/testimoni/5",
+    "method": "DELETE",
+    "sortNum": 20000,
+    "created": "2023-06-08T06:29:44.896Z",
+    "modified": "2023-06-08T06:45:49.462Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSBCeiIsImV4cCI6MTY4NjIwOTY2OCwiaWQiOiJBem1pIEJ6In0.EPHpHLxTjgPVsOdAF-pV5sIhTGY9qz6xUZwWFotF9CY"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5f60212a-bfa7-46d2-89f8-1e9320a1b0aa",
+    "colId": "b307c7b6-079e-4657-83a4-9ae5d264370c",
+    "containerId": "",
+    "name": "Update Testimoni",
+    "url": "http://localhost:3000/auth/testimoni/2",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-06-08T06:30:11.312Z",
+    "modified": "2023-06-08T06:43:48.902Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Raisa Adriana"
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Buah mantep jos pokokke bos"
+        }
+      ],
+      "files": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSBCeiIsImV4cCI6MTY4NjIwOTY2OCwiaWQiOiJBem1pIEJ6In0.EPHpHLxTjgPVsOdAF-pV5sIhTGY9qz6xUZwWFotF9CY"
+    },
+    "tests": []
+  },
+  {
+    "_id": "3fba4de8-1901-48fb-912d-1ea7005f6cda",
+    "colId": "b307c7b6-079e-4657-83a4-9ae5d264370c",
+    "containerId": "",
+    "name": "Add Testimoni",
+    "url": "http://localhost:3000/auth/testimoni",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-06-08T06:30:39.931Z",
+    "modified": "2023-06-08T06:42:59.891Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "Nama",
+          "value": "Raisa "
+        },
+        {
+          "name": "Deskripsi",
+          "value": "Penjualan buah disini sangat berkualitas "
+        }
+      ],
+      "files": [
+        {
+          "name": "gambar",
+          "value": "..\\..\\..\\..\\..\\Downloads\\raisa.jpg"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vd3d3LnBuZ2FsbC5jb20vd3AtY29udGVudC91cGxvYWRzLzEyL0F2YXRhci1Oby1CYWNrZ3JvdW5kLnBuZyIsIlVzZXJJRCI6IjdlYWNiYmIxLWJkM2EtNDQ0Yy05NGUwLTlmYmMxZWZiNDFiZCIsIlVzZXJuYW1lIjoiQXptaSBCeiIsImV4cCI6MTY4NjIwOTY2OCwiaWQiOiJBem1pIEJ6In0.EPHpHLxTjgPVsOdAF-pV5sIhTGY9qz6xUZwWFotF9CY"
+    },
+    "tests": []
   }
 ]

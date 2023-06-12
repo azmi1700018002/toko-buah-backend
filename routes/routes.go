@@ -4,21 +4,30 @@ import (
 	"time"
 	"toko-buah/controller"
 	"toko-buah/controller/c_about"
+	c_bestseller "toko-buah/controller/c_bestseller"
 	"toko-buah/controller/c_home"
 	c_newarrival "toko-buah/controller/c_new_arrival"
 	"toko-buah/controller/c_produk"
+	"toko-buah/controller/c_send_email"
+	"toko-buah/controller/c_testimoni"
 	"toko-buah/controller/c_user"
 	"toko-buah/handler"
 	"toko-buah/middleware"
 	"toko-buah/repository/r_about"
+	r_bestseller "toko-buah/repository/r_best_seller"
 	"toko-buah/repository/r_home"
 	r_newarrival "toko-buah/repository/r_new_arrival"
 	"toko-buah/repository/r_produk"
+	"toko-buah/repository/r_send_email"
+	"toko-buah/repository/r_testimoni"
 	"toko-buah/repository/r_user"
 	"toko-buah/service/s_about"
+	s_bestseller "toko-buah/service/s_best_seller"
 	"toko-buah/service/s_home"
 	s_newarrival "toko-buah/service/s_new_arrival"
 	"toko-buah/service/s_produk"
+	"toko-buah/service/s_send_email"
+	"toko-buah/service/s_testimoni"
 	"toko-buah/service/s_user"
 
 	"github.com/gin-contrib/cors"
@@ -111,6 +120,36 @@ func SetupRouter() *gin.Engine {
 	newarrivalDeleteRepo := r_newarrival.NewDeleteNewArrivalRepository()
 	newarrivalDeleteService := s_newarrival.NewDeleteNewArrivalService(newarrivalDeleteRepo)
 
+	//Best Seller
+	getBestsellerRepo := r_bestseller.NewGetBestsellerRepository()
+	bestsellerGetService := s_bestseller.NewGetBestsellerService(getBestsellerRepo)
+
+	addBestsellerRepo := r_bestseller.NewAddBestsellerRepository()
+	bestsellerAddService := s_bestseller.NewAddBestsellerService(addBestsellerRepo)
+
+	updateBestsellerRepo := r_bestseller.NewUpdateBestsellerRepository()
+	bestsellerUpdateService := s_bestseller.NewUpdateBestsellerService(updateBestsellerRepo)
+
+	bestsellerDeleteRepo := r_bestseller.NewDeleteBestsellerRepository()
+	bestsellerDeleteService := s_bestseller.NewDeleteBestsellerService(bestsellerDeleteRepo)
+
+	//Best Seller
+	getTestimoniRepo := r_testimoni.NewGetTestimoniRepository()
+	testimoniGetService := s_testimoni.NewGetTestimoniService(getTestimoniRepo)
+
+	addTestimoniRepo := r_testimoni.NewAddTestimoniRepository()
+	testimoniAddService := s_testimoni.NewAddTestimoniService(addTestimoniRepo)
+
+	updateTestimoniRepo := r_testimoni.NewUpdateTestimoniRepository()
+	testimoniUpdateService := s_testimoni.NewUpdateTestimoniService(updateTestimoniRepo)
+
+	testimoniDeleteRepo := r_testimoni.NewDeleteTestimoniRepository()
+	testimoniDeleteService := s_testimoni.NewDeleteTestimoniService(testimoniDeleteRepo)
+
+	//Send Email
+	emailRepo := r_send_email.NewGmailRepository("smtp.gmail.com", "587", "test@gmail.com", "test123")
+	emailService := s_send_email.NewEmailService(emailRepo)
+
 	// Create controller instance
 	userGetController := c_user.NewGetUserController(userGetService)
 	userUpdateController := c_user.NewUpdateUserController(userUpdateService)
@@ -131,20 +170,37 @@ func SetupRouter() *gin.Engine {
 	produkUpdateController := c_produk.NewUpdateProdukController(produkUpdateService)
 	produkDeleteController := c_produk.NewProdukDeleteController(produkDeleteService)
 
+	bestsellerGetController := c_bestseller.NewGetBestsellerController(bestsellerGetService)
+	bestsellerAddController := c_bestseller.NewBestsellerAddController(bestsellerAddService)
+	bestsellerUpdateController := c_bestseller.NewUpdateBestsellerController(bestsellerUpdateService)
+	bestsellerDeleteController := c_bestseller.NewBestsellerDeleteController(bestsellerDeleteService)
+
 	newarrivalGetController := c_newarrival.NewGetNewArrivalController(newarrivalGetService)
 	newarrivalAddController := c_newarrival.NewNewArrivalAddController(newarrivalAddService)
 	newarrivalUpdateController := c_newarrival.NewUpdateNewArrivalController(newarrivalUpdateService)
 	newarrivalDeleteController := c_newarrival.NewNewArrivalDeleteController(newarrivalDeleteService)
 
+	testimoniGetController := c_testimoni.NewGetTestimoniController(testimoniGetService)
+	testimoniAddController := c_testimoni.NewTestimoniAddController(testimoniAddService)
+	testimoniUpdateController := c_testimoni.NewUpdateTestimoniController(testimoniUpdateService)
+	testimoniDeleteController := c_testimoni.NewTestimoniDeleteController(testimoniDeleteService)
+
+	emailController := c_send_email.NewEmailController(emailService)
+
 	// Apply to public routes
 	r.GET("/", controller.Helloworld)
 	r.POST("/login", handler.LoginHandler)
 	r.POST("/register", registerUser.RegisterUser)
-	r.GET("/users", userGetController.GetAllUser)
-	r.GET("/produk", produkGetController.GetAllProduk)
-	r.GET("/newarrival", newarrivalGetController.GetAllNewArrival)
+	r.GET("public/users", userGetController.GetAllUser)
+	r.GET("public/produk", produkGetController.GetAllProduk)
+	r.GET("public/newarrival", newarrivalGetController.GetAllNewArrival)
 	r.GET("/public/home", homeGetController.GetAllHome)
 	r.GET("/public/about", aboutGetController.GetAllAbout)
+	r.GET("/public/bestseller", bestsellerGetController.GetAllBestseller)
+	r.GET("public/testimoni", testimoniGetController.GetAllTestimoni)
+	r.POST("/public/send-email", func(c *gin.Context) {
+		emailController.SendEmail(c.Writer, c.Request)
+	})
 	// r.GET("/users/:id_user", userGetController.GetUserByID)
 	// Apply auth middleware to routes
 	auth := r.Group("/auth")
@@ -174,6 +230,16 @@ func SetupRouter() *gin.Engine {
 		auth.POST("newarrival", newarrivalAddController.AddNewArrival)
 		auth.PUT("newarrival/:new_arrival_id", newarrivalUpdateController.UpdateNewArrival)
 		auth.DELETE("newarrival/:new_arrival_id", newarrivalDeleteController.DeleteNewArrival)
+
+		auth.GET("/bestseller", bestsellerGetController.GetAllBestseller)
+		auth.POST("bestseller", bestsellerAddController.AddBestseller)
+		auth.PUT("bestseller/:bestseller_id", bestsellerUpdateController.UpdateBestseller)
+		auth.DELETE("bestseller/:bestseller_id", bestsellerDeleteController.DeleteBestseller)
+
+		auth.GET("/testimoni", testimoniGetController.GetAllTestimoni)
+		auth.POST("testimoni", testimoniAddController.AddTestimoni)
+		auth.PUT("testimoni/:testimoni_id", testimoniUpdateController.UpdateTestimoni)
+		auth.DELETE("testimoni/:testimoni_id", testimoniDeleteController.DeleteTestimoni)
 	}
 	return r
 }

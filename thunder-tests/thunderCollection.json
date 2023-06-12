@@ -33,5 +33,19 @@
     "created": "2023-05-16T06:49:45.956Z",
     "sortNum": 50000,
     "folders": []
+  },
+  {
+    "_id": "53f71fb8-67d2-4f0e-af70-ba75b0b241cc",
+    "colName": "Best Seller",
+    "created": "2023-06-05T03:25:58.104Z",
+    "sortNum": 60000,
+    "folders": []
+  },
+  {
+    "_id": "b307c7b6-079e-4657-83a4-9ae5d264370c",
+    "colName": "Testimoni",
+    "created": "2023-06-08T06:28:57.206Z",
+    "sortNum": 70000,
+    "folders": []
   }
 ]
